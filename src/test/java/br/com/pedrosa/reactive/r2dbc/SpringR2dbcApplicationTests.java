@@ -16,6 +16,7 @@ class SpringR2dbcApplicationTests {
 	@Autowired
 	PersonRepository personRepository;
 
+
 	@Test
 	public void whenDeleteAll_then0IsExpected() {
 		personRepository.deleteAll()
@@ -34,7 +35,7 @@ class SpringR2dbcApplicationTests {
 	}
 
 	private void insertPersons() {
-		List<Person> players = Arrays.asList(
+		List<Person> persons = Arrays.asList(
 				new Person(1, "Kaka", 37),
 				new Person(2, "Messi", 32),
 				new Person(3, "Mbappé", 20),
@@ -42,7 +43,7 @@ class SpringR2dbcApplicationTests {
 				new Person(5, "Lewandowski", 30),
 				new Person(6, "Cavani", 32)
 		);
-		personRepository.saveAll(players).subscribe();
+		personRepository.saveAll(persons).subscribe();
 	}
 
 }

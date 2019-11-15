@@ -2,7 +2,7 @@ package br.com.pedrosa.reactive.r2dbc.handler;
 
 import br.com.pedrosa.reactive.r2dbc.domain.Person;
 import br.com.pedrosa.reactive.r2dbc.repository.PersonRepository;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
@@ -11,7 +11,7 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
 
 @Log4j2
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Component
 public class PersonHandler {
 
