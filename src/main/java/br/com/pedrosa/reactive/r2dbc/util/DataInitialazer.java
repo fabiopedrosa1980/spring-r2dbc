@@ -1,4 +1,4 @@
-package br.com.pedrosa.reactive.r2dbc.config;
+package br.com.pedrosa.reactive.r2dbc.util;
 
 import br.com.pedrosa.reactive.r2dbc.domain.Person;
 import br.com.pedrosa.reactive.r2dbc.repository.PersonRepository;

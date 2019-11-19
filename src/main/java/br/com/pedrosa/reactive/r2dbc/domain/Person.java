@@ -14,5 +14,5 @@ public class Person  {
     @Id
     private Integer id;
     private String name;
-    private int age;
+    private Integer age;
 }
